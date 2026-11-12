@@ -1,0 +1,1 @@
+All three jets satisfy cyclic Bianchi; polynomial potential curl derivative equals K in all 64 components. Evaluation rows: [[Fraction(0, 1), Fraction(2, 1), Fraction(0, 1)], [Fraction(1, 1), Fraction(2, 1), Fraction(0, 1)], [Fraction(1, 1), Fraction(2, 1), Fraction(1, 1)]]. Determinant: -2.

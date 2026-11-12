@@ -1,0 +1,155 @@
+\section{The trace sensor and its weighted Ward limit}
+\label{sec:trace-prosper-sensor}
+
+Fix one selected family and a simple gauge group. Let $E$ be the real
+finite-dimensional space of grade-five vector coefficient arrays obeying the
+reality and signed covariance conditions, and let $H$ be the corresponding
+reference vector table space. The free projection $f:E\to H$ applies the
+reference field projection in each vector component. Let $x\in E$ be the
+coefficient array of the free equation of motion. The free rank calculation
+in Section~\ref{sec:ex-lattice-trace-free-rank} gives $x\ne0$ and
+$\ker f=\mathbb R x$. To fix the free Ward normalization, write the raw
+equation-of-motion array as $X_b=\sum_{i,a}\langle F_{bi},\partial_a
+F_{ai}\rangle$, and let
+\[
+ (J^{(1)})_b=\sum_i\langle F_{bi},\partial_b F_{bi}\rangle,\qquad
+ (J^{(2)})_b=\sum_{i,j}\langle F_{ij},\partial_b F_{ij}\rangle.
+\]
+Here $F$ and $\partial F$ are the free curvature jet and its first derivative,
+and the inner product is the gauge-invariant real color inner product. These
+three arrays are a basis of the raw vector space. To see independence, choose
+a unit color vector and evaluate the zeroth component on three jets. In each,
+the only nonzero curvature pair, up to antisymmetry, is respectively $F_{12}$,
+$F_{01}$, and $F_{01}$. The nonzero derivative entries, again up to
+antisymmetry, are respectively
+\[
+ \begin{array}{c|l}
+ 1&\partial_0F_{12}=1,\quad \partial_1F_{20}=-\tfrac12,\quad
+       \partial_2F_{01}=-\tfrac12,\\
+ 2&\partial_0F_{01}=1,\quad \partial_2F_{21}=-1,\\
+ 3&\partial_0F_{01}=1.
+ \end{array}
+\]
+Each scalar stands for that scalar times the chosen color vector. These jets
+satisfy the Bianchi identity; for example a curvature jet $(F_{ab},K_{cab})$
+with $K_{cab}+K_{abc}+K_{bca}=0$ is realized by the polynomial potential
+$A_b(z)=\tfrac12z^aF_{ab}+\tfrac13z^az^cK_{cab}$. Direct substitution gives
+the evaluation matrix
+\[
+ \begin{pmatrix}0&2&0\\1&2&0\\1&2&1\end{pmatrix}
+ \quad\text{for }(J^{(1)}_0,J^{(2)}_0,X_0).
+\]
+Its determinant is nonzero. The free-rank calculation gives the matching
+upper bound three for the raw vector dimension, so the arrays form a basis.
+The label-coordinate identification carries $x$ to $X$. Every raw vector
+therefore has unique real coordinates $(w_0,w_1,w_2)$ in the form
+\[
+ 2(w_0-w_2)J^{(1)}+(2w_1+\tfrac12w_2)J^{(2)}+w_2X.
+\]
+The free Ward functional $\rho:E\to\mathbb R$ is the dilation contraction
+on that raw vector, with value $-4(w_0+4w_1)$. In particular $X$ has
+coordinates $(1,-\tfrac14,1)$ and $\rho(x)=0$.
+
+Let $k_i$ be the selected initial levels, with $k_i\to\infty$. For a level
+$j$, let $q(j)>j$ be the first level whose logarithmic scale separation from
+$j$ is at least $(\log\widehat\beta_j)^{48}$, and put $n_i=q(k_i)$.
+The running rate is $\widehat\beta_n=\bar\beta+\gamma\ell_n$, where $\gamma>0$
+and the schedule scale $\ell_n\to\infty$. Consequently $n_i\to\infty$,
+$\widehat\beta_{n_i}\to\infty$, and the positive weight
+\begin{equation}
+ a_i=\exp\!\left\{\frac15\bigl(\log\log\widehat\beta_{n_i}\bigr)^2\right\}
+ \longrightarrow\infty.
+ \label{eq:trace-sensor-weight}
+\end{equation}
+This is the $1/5$ age weight at the \emph{postselected} level $n_i$;
+it is not the reciprocal chart scale.
+
+Write $s_i:E\to H$ for the selected, normalized grade-five chart map. The
+chart has the following normalization. Denote the interacting grade-five
+projection by $P$, its scale-$i$ identification from the reference field by
+$X_i$, the selected terminal lift by $Y_i$, the arch map at $n_i$ by $M_i$,
+the positive threshold there by $t_i$, and the core projection by $Q$.
+With arch scale $b_n>0$ and dilation radius $r_i>0$, set
+$c_i=b_{n_i}r_i^5$. On an eventual common tail, for each vector component
+indexed by $\alpha$,
+\begin{equation}
+ (s_i y)_\alpha=X_i^{-1}P(c_i t_i^2 M_i^{-1}y_\alpha),\qquad
+ (u_i h)_\alpha=c_i^{-1}t_i^{-2}Q M_iY_i h_\alpha.
+ \label{eq:trace-sensor-selected-formulas}
+\end{equation}
+The second formula is for the selected right inverse, whose existence includes
+the fact that it maps into the real covariant vector space $E$. The limiting
+right inverse $U$ applies the fixed reference lift to each component. These
+formulas use the same selected history and the same index $i$; the symbols
+$n_i$ and $b_n$ are as above (with $b_n$ denoting the arch scale). The input used here is that these maps
+are well defined and satisfy
+\begin{equation}
+ fU=\mathrm{id}_H,\qquad u_i h\longrightarrow Uh\quad(h\in H),
+ \qquad s_i u_i=\mathrm{id}_H\quad\text{eventually}.
+ \label{eq:trace-sensor-chart}
+\end{equation}
+The last equality holds simultaneously for all $h\in H$ on one tail. The
+construction of these maps uses the selected chart, its grade-five terminal
+projection, symmetry and normalization receipts, including $P Y_i=X_i$;
+the convergence $u_i\to U$ is the quantitative transported-lift result.
+These are inputs here, not consequences of the limiting rank alone. Finite dimensionality upgrades the
+pointwise convergence of $u_i$ to operator-norm convergence.
+
+\begin{proposition}[Selected trace sensor]
+\label{prop:trace-prosper-sensor}
+Assume \eqref{eq:trace-sensor-chart}. Suppose a sequence $v_i\in E$
+satisfies, in the indicated norms,
+\begin{equation}
+ v_i\longrightarrow x,\qquad
+ a_i s_i(v_i)\longrightarrow0\ \text{in }H,\qquad
+ a_i\rho(v_i)\longrightarrow0\ \text{in }\mathbb R.
+ \label{eq:trace-sensor-marked}
+\end{equation}
+Then $s_i\to f$ in operator norm. Moreover there are linear functionals
+$\mu_i:H\to\mathbb R$ and $C\ge0$ such that, for all sufficiently large
+$i$, $|\mu_i(h)|\le C\|h\|$ for every $h\in H$, and for every
+$\varepsilon>0$, for all sufficiently large $i$,
+\begin{equation}
+ |a_i(\mu_i(s_i y)-\rho(y))|\le\varepsilon\|y\|
+ \quad\text{for every }y\in E.
+ \label{eq:trace-sensor-conclusion}
+\end{equation}
+The tail in the second assertion may depend on $\varepsilon$, but is uniform
+in $y$.
+\end{proposition}
+\begin{proof}
+Since $a_i>0$ and $a_i\to\infty$, the first weighted limit in
+\eqref{eq:trace-sensor-marked} implies $s_i(v_i)\to0$. Choose a linear
+functional $A:E\to\mathbb R$ for which
+$y=Uf(y)+A(y)x$ for every $y$: indeed $y-Uf(y)$ lies in $\ker f$, and its
+coefficient along the nonzero $x$ is linear. Define
+$T_i=u_i f+A\otimes v_i$. The chart and marked-vector limits imply
+$T_i\to\mathrm{id}_E$ in operator norm. For sufficiently large $i$, $T_i$
+is invertible and $T_i^{-1}\to\mathrm{id}_E$, by the geometric series for
+$\mathrm{id}_E-T_i$.
+
+On the common right-inverse tail,
+\[
+ s_iT_i y=f(y)+A(y)s_i(v_i).
+\]
+The right side converges to $f$ in operator norm, so multiplying on the
+right by $T_i^{-1}$ proves $s_i\to f$. Now apply the weighted rank-one
+receiver lemma (Lemma~\ref{lem:ex-lattice-trace-weighted-price}) with
+$(v_i,u_i,w_i,e_i)$ there equal to $(s_i,u_i,v_i,a_i)$ here. Its two
+weighted hypotheses are precisely the last two limits in
+\eqref{eq:trace-sensor-marked}; its other hypotheses follow from the
+preceding paragraph and \eqref{eq:trace-sensor-chart}. It gives
+$\mu_i=\rho u_i$ with bounded norms and
+$\|a_i(\mu_i s_i-\rho)\|_{E^*}\to0$. The definition of operator norm
+then gives \eqref{eq:trace-sensor-conclusion}, with one tail uniform in $y$.
+\end{proof}
+
+The marked-vector assumptions are separate analytic inputs. In the selected
+construction the marked vector is the inverse arch-scale times the transported
+chosen response minus the transported reference response, evaluated at
+$n_i$. The reference and response limits give $v_i\to x$ and the weighted
+Ward limit; a distinct local-price estimate gives the weighted field limit.
+The scalar assembly is in Section~\ref{sec:ex-lattice-trace-weighted-estimates}.
+Its finite-volume price, selected-chart and probe estimates remain draft
+prerequisites. This proposition neither proves those producers nor asserts the
+full existence theorem.

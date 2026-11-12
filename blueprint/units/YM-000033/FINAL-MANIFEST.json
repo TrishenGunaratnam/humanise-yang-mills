@@ -1,0 +1,60 @@
+{
+  "33": {
+    "commit": "06c8d49c02d17f286ed85ab1f7206da993ce9615",
+    "unit_fingerprint": "485da368423b8c3ef687dfb40eafcc2616ddd5d04b220e4fa98513d1bc5ad6dc",
+    "owned_files": {
+      "blueprint/units/YM-000033/HANDOFF.md": {
+        "sha256": "3e8755c28b2de33a0d7a59026183944d3e3e1b3b274d475d3d1664f1e66d9178",
+        "git_blob": "e7b93c41ffd14a6257078e7ed6dd27ca2f52b701"
+      },
+      "blueprint/units/YM-000033/correspondence.md": {
+        "sha256": "d2b85267b2897a1484edb47b9cfd18a3ab883134d81406085d871c34163f3772",
+        "git_blob": "69014c2e5076b672c340ce6494d253b2a29b6708"
+      },
+      "blueprint/units/YM-000033/unit.json": {
+        "sha256": "dae313e9bc953469105de920705239dbc45fc5287330f4e29ef031847ffb9a0a",
+        "git_blob": "d325f509994e6a4bce87cd20910408eb0cdbee28"
+      },
+      "blueprint/units/YM-000033/validation.md": {
+        "sha256": "d1bc63f021e420c9bd438c41970aa2cf7e4eda1b8d73aa99d8848ddd1f0ab3b3",
+        "git_blob": "b523f163d12b0d163eebe875fd49466798104bb8"
+      },
+      "manuscript/existence/trace-prosper-sensor.tex": {
+        "sha256": "a19321e0371c52b72ce44af1386e84c9b38cba619fd8fa9e3b5392ca99dd9e31",
+        "git_blob": "a50a57e5615572882d14d082250c7194b15f00d9"
+      }
+    },
+    "fingerprinted_manuscript_support": {
+      "manuscript/existence/trace-prosper-sensor.tex": "a19321e0371c52b72ce44af1386e84c9b38cba619fd8fa9e3b5392ca99dd9e31",
+      "manuscript/existence/trace-free-rank.tex": "004d418a0f2121ed1fa3bd3ec3b1b6c06f39afa62203d23e17e0f2b6cabcedef",
+      "manuscript/existence/trace-weighted-estimates.tex": "dfe8ecfa80a170160a2930ab580957c9be04013d1bd84d845434de5f395d19b4",
+      "manuscript/preamble.tex": "0827ef173e55ac6cf7b9726f3cbaaa5be93a5dfac8ffb2cfdf7b3faed65e90df"
+    }
+  },
+  "34": {
+    "commit": "84925955cd8a62fc9a035b7b7dd2195d20862692",
+    "unit_fingerprint": "7d6cd1a1d0270817b2b8093170770276010a41d057d7e4e5a0611264f27f6b1e",
+    "owned_files": {
+      "blueprint/units/YM-000034/HANDOFF.md": {
+        "sha256": "f678db3558a13be261d4e535d0d12d5762d8a544e5e9b20c789f7b83b248450a",
+        "git_blob": "57a68ef93a8931cbf89cc166cfd0eaea1ad994a1"
+      },
+      "blueprint/units/YM-000034/correspondence.md": {
+        "sha256": "ddb9145dfa6b151f9c696b2d4abf9d1dceec6731af8bb18be547138f7dba9be3",
+        "git_blob": "9752bfa4b33a2e6032e95705af013a675da9b0df"
+      },
+      "blueprint/units/YM-000034/unit.json": {
+        "sha256": "7f6cb3f514bef2b1da68b402649d42060c35d568a163ea59d24fa26bfe600741",
+        "git_blob": "85a326e2434acd18d82a59504ec1b7a48ac51e8d"
+      },
+      "manuscript/existence/trace-branch-moments.tex": {
+        "sha256": "4972eac91b717e47ce6975af4bb8c417d9f6aeaf4a22ae617e6dc539ab38dc21",
+        "git_blob": "34efbd7e1f70056a7e25fd6eeaf05b06207186ed"
+      }
+    },
+    "fingerprinted_manuscript_support": {
+      "manuscript/existence/trace-branch-moments.tex": "4972eac91b717e47ce6975af4bb8c417d9f6aeaf4a22ae617e6dc539ab38dc21",
+      "manuscript/preamble.tex": "0827ef173e55ac6cf7b9726f3cbaaa5be93a5dfac8ffb2cfdf7b3faed65e90df"
+    }
+  }
+}
